@@ -1,7 +1,9 @@
+
+
 public class Habitante {
 
-	String nombre, apellido1, apellido2;
-	int edad,codigopostal,dni;
+	String  nombre, apellido1, apellido2, direccion;
+	int  edad, dni;
 
 	/*public Habitante (String nombre, String apellido1, String apellido2,int edad,int codigopostal,int dni) {
 
@@ -30,9 +32,9 @@ public class Habitante {
     {
         this.edad=edad;
     }
-    public void setCodigopostal(int codigopostal)
+    public void setDireccion(String direccion)
     {
-        this.codigopostal=codigopostal;
+        this.direccion=direccion;
     }
     public void setDni(int dni)
     {
@@ -56,9 +58,9 @@ public class Habitante {
  	{	
 	return this.edad;
  	}
- 	public int getCodigopostal() 
+ 	public String getDireccion() 
  	{	
-	return this.codigopostal;
+	return this.direccion;
  	}
  	public int getDni() 
  	{	
