@@ -3,12 +3,13 @@ public class Ayuntamiento {
 
 	String localidad , direccion , nom_alcalde;
 
-	public Ayuntamiento (String localidad, String direccion, String nom_alcalde) {
+/*	public Ayuntamiento (String localidad, String direccion, String nom_alcalde) {
 
 		this.localidad=localidad;
 		this.direccion=direccion;
 		this.nom_alcalde=nom_alcalde;
-	}
+	}*/
+	
 	public void setLocalidad(String localidad)
     {
         this.localidad=localidad;
@@ -24,14 +25,14 @@ public class Ayuntamiento {
 
     public String getLocalidad() 
  	{	
-	return.localidad;
+	return this.localidad;
  	}
  	public String getDireccion() 
  	{	
-	return.direccion;
+	return this.direccion;
  	}
  	public String getNom_alcalde() 
  	{	
-	return.nom_alcalde;
+	return this.nom_alcalde;
  	}
 }

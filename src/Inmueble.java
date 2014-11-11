@@ -2,12 +2,12 @@ public class Inmueble {
 
 	String tipo , antiguedad , direccion;
 
-	public Inmueble (String tipo, String antiguedad, String direccion) {
+	/*public Inmueble (String tipo, String antiguedad, String direccion) {
 
 		this.tipo=tipo;
 		this.antiguedad=antiguedad;
 		this.direccion=direccion;
-	}
+	}*/
 
 
     public void setTipo(String tipo)
@@ -25,15 +25,15 @@ public class Inmueble {
     
   	public String getTipo() 
  	{	
-	return.tipo;
+	return this.tipo;
  	}	
  	public String getAntiguedad() 
  	{	
-	return.antiguedad;
+	return this.antiguedad;
  	}
  	public String getDireccion() 
  	{	
-	return.direccion;
+	return this.direccion;
  	}   
  
 }

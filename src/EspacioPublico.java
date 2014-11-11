@@ -2,12 +2,12 @@ public class EspacioPublico {
 
 	String nombre, tipo, localidad;
 
-	public EspacioPublico (String nombre, String tipo, String localidad) {
+	/*public EspacioPublico (String nombre, String tipo, String localidad) {
 
 		this.nombre=nombre;
 		this.tipo=tipo;
 		this.localidad=localidad;
-	}
+	}*/
 
 	public void setNombre(String nombre)
     {
