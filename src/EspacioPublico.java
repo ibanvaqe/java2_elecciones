@@ -17,9 +17,9 @@ public class EspacioPublico {
     {
         this.tipo=tipo;
     }
-    public void setDireccion(String direccion)
+    public void setDireccion(String localidad)
     {
-        this.direccion=direccion;
+        this.localidad=localidad;
     }
     
  	public String getNombre() 

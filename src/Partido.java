@@ -1,6 +1,7 @@
 public class Partido {
 
 	String nombre_par;
+	String presidente;
 	int n_miembros;
 
 	/*public Partido (String nombre_par,int n_miembros) {
@@ -19,6 +20,10 @@ public class Partido {
     {
         this.n_miembros=n_miembros;
     }
+     public void setPresidente(String presidente)
+    {
+        this.presidente=presidente;
+    }
   
     
   	public String getNombre_par() 
@@ -29,4 +34,9 @@ public class Partido {
  	{	
 	return this.n_miembros;
  	}
+  	public String getPresidente() 
+ 	{	
+	return this.presidente;
+ 	}
+ 	
 }

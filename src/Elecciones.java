@@ -3,7 +3,7 @@ import java.io.*;
 
 
 public class Elecciones {
-	public static void main (String[] args) {
+	public static void main (String[] args)  throws IOException  {
 
 
 //Habitante
@@ -14,8 +14,8 @@ public class Elecciones {
 	int edad_hab = 25;
 	int dni_hab = 343435;
 
-	String[] resultadohab = new String[4]
-	int[] resultadonum1 = new int[3]
+	String[] resultadohab = new String[4];
+	int[] resultadonum1 = new int[3];
 	
 //Inmueble
 
@@ -35,10 +35,7 @@ public class Elecciones {
 	String direccion_ayu = "Iribar";
 	String nom_alcalde = "Pepe";
 
-//Partido
 
-	String nombre_par = "ADO";
-	int n_miembros = 34; 
 
 
 //CONSTRUCTORES DE LAS CLASES
@@ -60,22 +57,25 @@ public class Elecciones {
 	resultadohab[0]=habitante.getNombre();
 	resultadohab[1]=habitante.getApellido1();
 	resultadohab[2]=habitante.getApellido2();
-	resultadonum1[3]=habitante.getDireccion();
+	resultadohab[3]=habitante.getDireccion();
 
-	System.out.println("\n nombre:" resultado[0]  + "\n primer apellido" resultado[1] + "\n segundo apellido:" resultado[2]);
+	System.out.println("\n nombre: " + resultadohab[0]  + "\n primer apellido: " + resultadohab[1] + "\n segundo apellido: " + resultadohab[2]);
+	System.out.println();
 	
+	Scanner sc = new Scanner(System.in);
+		System.out.println("\n Que quieres hacer: (E) Editar , (L) Leer o (S) Salir;
 	
-	
+	//PARTIDO POLITICO
 	
 	//ARRAYLIST
-	
-	BufferedReader fr = new BufferedReader ( new Filereader("/home/zubiri/ProyectosJava/java2_elecciones/src/listadoPartidos.txt"));
-	
-	ArrayList<Integer> listapartidos = new ArrayList<Integer>();  
+	ArrayList <String> listapartidos = new ArrayList <String> ();  
+    FileReader fr = new FileReader("listadoPartidos.txt");
+    BufferedReader br = new BufferedReader(fr); 
+
 	
 	String contenido;
 	
-	while ((contenido = fr.readLine()) = !null)
+	while ((contenido = br.readLine()) != null)
 		{
 		
 		listapartidos.add(contenido);
@@ -85,12 +85,14 @@ public class Elecciones {
 	//muestra con un for la lista de partidos
 	for(int i=0; i<listapartidos.size(); i++)
 		{
-			System.out.println("    "+listapartidos.get(i));
+			System.out.println("    " + listapartidos.get(i));
 		}
 	
 	        // Vaciar el ArrayList
-	lista_partidos.clear();
-}
+	listapartidos.clear();
+
+	
+	}
 
 
 }
