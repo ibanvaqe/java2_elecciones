@@ -37,7 +37,7 @@ public class Elecciones {
 
 
 
-
+/*
 //CONSTRUCTORES DE LAS CLASES
 
 	Habitante habitante = new Habitante();
@@ -62,12 +62,12 @@ public class Elecciones {
 	System.out.println("\n nombre: " + resultadohab[0]  + "\n primer apellido: " + resultadohab[1] + "\n segundo apellido: " + resultadohab[2]);
 	System.out.println();
 	
-	Scanner sc = new Scanner(System.in);
-		System.out.println("\n Que quieres hacer: (E) Editar , (L) Leer o (S) Salir;
-	
+
+	*/
 	//PARTIDO POLITICO
 	
 	//ARRAYLIST
+
 	ArrayList <String> listapartidos = new ArrayList <String> ();  
     FileReader fr = new FileReader("listadoPartidos.txt");
     BufferedReader br = new BufferedReader(fr); 
@@ -90,9 +90,10 @@ public class Elecciones {
 	
 	        // Vaciar el ArrayList
 	listapartidos.clear();
-
 	
-	}
+	
 
+		
+	}
 
 }
