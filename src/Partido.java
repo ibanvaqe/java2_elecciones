@@ -4,27 +4,27 @@ public class Partido {
 	String presidente;
 	int n_miembros;
 
-	/*public Partido (String nombre_par,int n_miembros) {
+	public Partido (String nombre_par, String presidente, int n_miembros) {
 
 		this.nombre_par=nombre_par;
-		this.n_miembros=n_miembros;
-	
-	}*/
+	    this.presidente=presidente;
+	    this.n_miembros=n_miembros;
+	}
 
 
     public void setNombre_par(String nombre_par)
     {
         this.nombre_par=nombre_par;
     }
-    public void setN_miembros(int n_miembros)
-    {
-        this.n_miembros=n_miembros;
-    }
+ 
      public void setPresidente(String presidente)
     {
         this.presidente=presidente;
     }
-  
+     public void setN_miembros(int n_miembros)
+    {
+        this.n_miembros=n_miembros;
+    }
     
   	public String getNombre_par() 
  	{	

@@ -37,15 +37,16 @@ public class Elecciones {
 
 
 
-/*
+
 //CONSTRUCTORES DE LAS CLASES
 
 	Habitante habitante = new Habitante();
 	Inmueble inmueble = new Inmueble();
 	EspacioPublico espaciopublico = new EspacioPublico();
 	Ayuntamiento ayuntamiento = new Ayuntamiento();
-	Partido partido = new Partido();
-	
+
+
+
 //Valores de la clase Habitante	
 	habitante.setNombre(nombre_hab);
 	habitante.setApellido1(apelli1_hab);
@@ -58,7 +59,7 @@ public class Elecciones {
 	resultadohab[1]=habitante.getApellido1();
 	resultadohab[2]=habitante.getApellido2();
 	resultadohab[3]=habitante.getDireccion();
-
+/*
 	System.out.println("\n nombre: " + resultadohab[0]  + "\n primer apellido: " + resultadohab[1] + "\n segundo apellido: " + resultadohab[2]);
 	System.out.println();
 	
@@ -75,6 +76,7 @@ public class Elecciones {
 	
 	String contenido;
 	
+	/*
 	while ((contenido = br.readLine()) != null)
 		{
 		
@@ -90,10 +92,45 @@ public class Elecciones {
 	
 	        // Vaciar el ArrayList
 	listapartidos.clear();
+	*/
 	
+	ArrayList <Partido> parti = new ArrayList <Partido> ();
+	String var1="",  var2="" ;
+	 int var3=0;
 	
-
+	while((contenido = br.readLine()) != null)
+	{
+		StringTokenizer st = new StringTokenizer(contenido);
+		for(int x=0;x<3;x++)
+		{
+			String var = st.nextToken(",");
+			if(x==0)
+			{
+				var1=var;
+			}
+			else if(x==1)
+			{
+				var2=var;
+			}
+			else
+			{
+				int var4=Integer.parseInt(var);
+				var3=var4;
+			}
+		}
+	parti.add(new Partido(var1,var2,var3));
 		
 	}
+	
+	for(int i=0; i<parti.size(); i++)
+     {
+            System.out.println("  nombre: "+parti.get(i).getNombre_par() +" siglas: "+parti.get(i).getPresidente()+" presidente: "+ parti.get(i).getN_miembros());
+     }
+            
+        // Vaciar el ArrayList
+        parti.clear();
+		
+		
+  }
 
 }
