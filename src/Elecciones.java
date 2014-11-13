@@ -100,11 +100,12 @@ public class Elecciones {
 	
 	while((contenido = br.readLine()) != null)
 	{
-		StringTokenizer st = new StringTokenizer(contenido);
+		StringTokenizer st = new StringTokenizer(contenido,",");
 		for(int x=0;x<3;x++)
 		{
-			String var = st.nextToken(",");
-			if(x==0)
+			String var = st.nextToken();
+			System.out.println(var);
+			/*if(x==0)
 			{
 				var1=var;
 			}
@@ -116,19 +117,19 @@ public class Elecciones {
 			{
 				int var4=Integer.parseInt(var);
 				var3=var4;
-			}
+			}*/
 		}
-	parti.add(new Partido(var1,var2,var3));
+	//parti.add(new Partido(var1,var2,var3));
 		
 	}
-	
+	/*
 	for(int i=0; i<parti.size(); i++)
      {
             System.out.println("  nombre: "+parti.get(i).getNombre_par() +" siglas: "+parti.get(i).getPresidente()+" presidente: "+ parti.get(i).getN_miembros());
      }
             
         // Vaciar el ArrayList
-        parti.clear();
+        parti.clear();*/
 		
 		
   }
