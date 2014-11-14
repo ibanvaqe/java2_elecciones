@@ -96,7 +96,7 @@ public class Elecciones {
 	
 	ArrayList <Partido> parti = new ArrayList <Partido> ();
 	String var1="",  var2="" ;
-	 int var3=0;
+	int var3;
 	
 	while((contenido = br.readLine()) != null)
 	{
@@ -104,12 +104,57 @@ public class Elecciones {
 		for(int x=0;x<3;x++)
 		{
 			String var = st.nextToken();
-			System.out.println(var);
-			/*if(x==0)
+			//System.out.println(var);
+			if(x==0)
+			{
+				var1=var;
+				//System.out.println(var1);
+			}
+			else if(x==1)
+			{
+				var2=var;
+				//System.out.println(var2);
+			}
+			else
+			{
+				var3=Integer.parseInt(var);
+				//System.out.println(var3);
+				
+			}
+		}
+
+	//parti.add(new Partido(var1,var2,var3));
+		
+	}
+	/*
+	for(int i=0; i<parti.size(); i++)
+     {
+            System.out.println("  nombre: "+parti.get(i).getNombre_par() +" presidente: "+parti.get(i).getPresidente()+" n_miembros: "+ parti.get(i).getN_miembros());
+     }
+            
+        // Vaciar el ArrayList
+        parti.clear();
+	*/
+		/*
+		ArrayList <Habitante> habi = new ArrayList <Habitante> ();
+		FileReader fr2 = new FileReader("censo.txt");
+    	BufferedReader br2 = new BufferedReader(fr2); 
+	
+		String contenido2; 
+	
+		
+		while((contenido2 = br2.readLine()) != null)
+		{
+		StringTokenizer st2 = new StringTokenizer(contenido2,",");
+			for(int y=0;y<7;y++)
+			{
+			String hab = st2.nextToken();
+			System.out.println(hab);
+			if(y==0)
 			{
 				var1=var;
 			}
-			else if(x==1)
+			else if(y==1)
 			{
 				var2=var;
 			}
@@ -117,20 +162,20 @@ public class Elecciones {
 			{
 				int var4=Integer.parseInt(var);
 				var3=var4;
-			}*/
-		}
-	//parti.add(new Partido(var1,var2,var3));
+			}
+			}
+	parti.add(new Partido(var1,var2,var3));
 		
-	}
-	/*
+		}
+	
 	for(int i=0; i<parti.size(); i++)
      {
             System.out.println("  nombre: "+parti.get(i).getNombre_par() +" siglas: "+parti.get(i).getPresidente()+" presidente: "+ parti.get(i).getN_miembros());
      }
-            
-        // Vaciar el ArrayList
-        parti.clear();*/
-		
+            */
+        //Vaciar el ArrayList
+    	//habi.clear();
+	
 		
   }
 
