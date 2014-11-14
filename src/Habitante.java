@@ -5,15 +5,15 @@ public class Habitante {
 	String  nombre, apellido1, apellido2, direccion;
 	int  edad, dni;
 
-	/*public Habitante (String nombre, String apellido1, String apellido2,int edad,int codigopostal,int dni) {
+	public Habitante (String nombre, String apellido1, String apellido2, String direccion, int edad, int dni) {
 
 		this.nombre=nombre;
 		this.apellido1=apellido1;
 		this.apellido2=apellido2;
+		this.direccion=direccion;
 		this.edad=edad;
-		this.codigopostal=codigopostal;
 		this.dni=dni;
-	}*/
+	}
 
 	public void setNombre(String nombre)
     {
@@ -27,15 +27,16 @@ public class Habitante {
     {
         this.apellido2=apellido2;
     }
- 
-    public void setEdad(int edad)
-    {
-        this.edad=edad;
-    }
+     
     public void setDireccion(String direccion)
     {
         this.direccion=direccion;
     }
+    public void setEdad(int edad)
+    {
+        this.edad=edad;
+    }
+
     public void setDni(int dni)
     {
         this.dni=dni;
@@ -54,14 +55,15 @@ public class Habitante {
  	{	
 	return this.apellido2;
  	}
- 	public int getEdad() 
- 	{	
-	return this.edad;
- 	}
  	public String getDireccion() 
  	{	
 	return this.direccion;
  	}
+ 	public int getEdad() 
+ 	{	
+	return this.edad;
+ 	}
+ 	
  	public int getDni() 
  	{	
 	return this.dni;

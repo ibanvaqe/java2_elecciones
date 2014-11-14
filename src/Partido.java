@@ -28,15 +28,15 @@ public class Partido {
     
   	public String getNombre_par() 
  	{	
-	return this.nombre_par;
+	return nombre_par;
  	}	
  	public int getN_miembros() 
  	{	
-	return this.n_miembros;
+	return n_miembros;
  	}
   	public String getPresidente() 
  	{	
-	return this.presidente;
+	return presidente;
  	}
  	
 }
