@@ -118,11 +118,17 @@ public class Elecciones {
 	
 	while((contenido = br.readLine()) != null)
 	{
-		StringTokenizer st = new StringTokenizer(contenido);
-		for(int x=0;x<3;x++)
+		StringTokenizer st = new StringTokenizer(contenido,",");
+		 // counting tokens
+      	//System.out.println("Total tokens : " + st.countTokens());
+      
+		while(st.hasMoreTokens())
 		{
-			String col = st.nextToken(",");
-			//System.out.println(var);
+			//System.out.println(st.nextToken());
+			for(int x=0;x<st.countTokens();x++)
+			{
+			String col = st.nextToken();
+			//System.out.println(col);
 			if(x==0)
 			{
 				col1=col;
@@ -139,6 +145,7 @@ public class Elecciones {
 			
 				//System.out.println(col3);
 				
+			}
 			}
 		}
 
